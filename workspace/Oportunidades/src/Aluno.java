@@ -1,12 +1,24 @@
-
 public class Aluno extends Usuario {
 	int matricula;
 	int semestreAtual;
 	int previsaoConclusao; 
-	String Curso;
+	String curso;
 	String qualificacao;
 	String experiencia;
+	//Construtor
+	public Aluno(int matricula, int semestreAtual, int previsaoConclusao, String curso, String qualificacao,
+			String experiencia) {
+		super();
+		this.matricula = matricula;
+		this.semestreAtual = semestreAtual;
+		this.previsaoConclusao = previsaoConclusao;
+		this.curso = curso;
+		this.qualificacao = qualificacao;
+		this.experiencia = experiencia;
+	}
 	
+	//FimConstrutor
+
 	public int getMatricula() {
 		return matricula;
 	}
@@ -32,11 +44,11 @@ public class Aluno extends Usuario {
 	}
 
 	public String getCurso() {
-		return Curso;
+		return curso;
 	}
 
 	public void setCurso(String curso) {
-		Curso = curso;
+		curso = curso;
 	}
 
 	public String getQualificacao() {
@@ -63,9 +75,6 @@ public class Aluno extends Usuario {
 	}
 	
 	void concorrerOportunidade(){
-	}
-	
-	void perfilLinkedin(){
 	}
 	
 	void cadastrarSistema(){

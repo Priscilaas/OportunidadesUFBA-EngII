@@ -1,5 +1,5 @@
+public class Empresa extends Usuario{
 
-public class Empresa {
 	String endereço;
 	
 	public String getEndereço() {

@@ -4,7 +4,13 @@ public class Contrata {
 	int dataVencimento;
 	String termos;
 
-	
+	public Contrata(int dataAdmissao, int dataVencimento, String termos) {
+		super();
+		this.dataAdmissao = dataAdmissao;
+		this.dataVencimento = dataVencimento;
+		this.termos = termos;
+	}
+
 	public int getDataAdmissao() {
 		return dataAdmissao;
 	}
