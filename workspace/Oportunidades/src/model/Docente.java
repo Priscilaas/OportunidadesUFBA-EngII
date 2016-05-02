@@ -1,3 +1,4 @@
+package model;
 public class Docente extends Usuario{
 	String area;
 		

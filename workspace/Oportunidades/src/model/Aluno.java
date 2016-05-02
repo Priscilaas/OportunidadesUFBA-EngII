@@ -1,3 +1,4 @@
+package model;
 public class Aluno extends Usuario {
 	int matricula;
 	int semestreAtual;
@@ -5,19 +6,7 @@ public class Aluno extends Usuario {
 	String curso;
 	String qualificacao;
 	String experiencia;
-	//Construtor
-	public Aluno(int matricula, int semestreAtual, int previsaoConclusao, String curso, String qualificacao,
-			String experiencia) {
-		super();
-		this.matricula = matricula;
-		this.semestreAtual = semestreAtual;
-		this.previsaoConclusao = previsaoConclusao;
-		this.curso = curso;
-		this.qualificacao = qualificacao;
-		this.experiencia = experiencia;
-	}
 	
-	//FimConstrutor
 
 	public int getMatricula() {
 		return matricula;

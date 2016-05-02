@@ -1,3 +1,4 @@
+package model;
 public class Empresa extends Usuario{
 
 	String endereço;
