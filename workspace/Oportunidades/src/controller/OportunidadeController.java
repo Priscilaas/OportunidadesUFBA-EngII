@@ -11,6 +11,9 @@ public class OportunidadeController {
 		void visualizaroportunidade(){	
 		}
 		
+		void concorrerOportunidade(){
+		}
+		
 		/*void perfilLinkedin(){
 		}
 		

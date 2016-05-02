@@ -60,12 +60,4 @@ public class Aluno extends Usuario {
 		
 	}
 	
-	void visualizarOportunidade(){
-	}
-	
-	void concorrerOportunidade(){
-	}
-	
-	void cadastrarSistema(){
-	}
 }

@@ -16,18 +16,4 @@ public class Docente extends Usuario{
 		this.area = area;
 	}
 	
-	//metódos a serem  implementados
-	
-	void cadatrarOportunidade(){
-	}
-	
-	void visualizaroportunidade(){	
-	}
-	
-	void perfilLinkedin(){
-	}
-	
-	void supervisionarAluno(){	
-	}
-	
 }
