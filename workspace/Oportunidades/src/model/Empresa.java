@@ -1,6 +1,6 @@
 package model;
 public class Empresa extends Usuario{
-
+	
 	String endereço;
 	
 	public String getEndereço() {

@@ -1,10 +1,11 @@
+package controller;
 
-public class Contrata {
+public class ContrataController {
 	int dataAdmissao;
 	int dataVencimento;
 	String termos;
 
-	public Contrata(int dataAdmissao, int dataVencimento, String termos) {
+	public ContrataController(int dataAdmissao, int dataVencimento, String termos) {
 		super();
 		this.dataAdmissao = dataAdmissao;
 		this.dataVencimento = dataVencimento;
@@ -44,3 +45,4 @@ public class Contrata {
 	}
 		
 }
+

@@ -8,7 +8,7 @@ public class Usuario {
 	String telefone;
 	
 	
-	public Usuario(long id, String nome, String email, char senha, String telefone) {
+	public Usuario() {
 		super();
 		this.id = id;
 		this.nome = nome;

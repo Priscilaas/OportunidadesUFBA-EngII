@@ -1,3 +1,4 @@
+package controller;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -8,6 +9,11 @@ import java.util.Collections;
 import java.util.List;
 
 import javax.swing.JOptionPane;
+
+import model.Aluno;
+import model.Docente;
+import model.Empresa;
+import model.Oportunidade;
 
 public class Arquivo extends EscolherArquivo{
 	
