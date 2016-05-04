@@ -22,7 +22,17 @@ public class AlunoController {
 		return false;
 	}
 	
-	void informarInteresse(){	
+	public boolean informarInteresse(Aluno interesse){
+            Arquivo arquivo = new Arquivo();
+	
+		try {
+			arquivo.salvarArquivoAluno(interesse);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return false;
 	}
 	
 }

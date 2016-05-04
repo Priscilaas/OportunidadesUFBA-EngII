@@ -1,14 +1,14 @@
 package model;
 public class Empresa extends Usuario{
 	
-	String endereço;
+	String endereco;
 	
-	public String getEndereço() {
-		return endereço;
+	public String getEndereco() {
+		return endereco;
 	}
 
-	public void setEndereço(String endereço) {
-		this.endereço = endereço;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	
 }
