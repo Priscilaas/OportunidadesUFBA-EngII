@@ -49,6 +49,7 @@ public class ViewCadastroOportunidade extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Cadastrar Oportunidade");
 
         jLabel1.setText("Cadastrar Oportunidade");
 
@@ -56,9 +57,9 @@ public class ViewCadastroOportunidade extends javax.swing.JFrame {
 
         jLabel3.setText("Empresa: ");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
 
-        jTextField1.setText("jTextField1");
+        jTextField1.setToolTipText("");
 
         jLabel5.setText("Pré-requisitos: ");
 
@@ -68,13 +69,7 @@ public class ViewCadastroOportunidade extends javax.swing.JFrame {
 
         jLabel6.setText("Valor:");
 
-        jTextField2.setText("jTextField2");
-
         jLabel7.setText("Endereço: ");
-
-        jTextField3.setText("jTextField3");
-
-        jTextField4.setText("jTextField4");
 
         jLabel4.setText("Número de Vagas");
 

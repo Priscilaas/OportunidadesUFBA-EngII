@@ -3,7 +3,7 @@ package controller;
 public class OportunidadeController {
 	
 	
-	//metódos a serem  implementados
+	//metodos a serem  implementados
 	
 		void cadatrarOportunidade(){
 		}

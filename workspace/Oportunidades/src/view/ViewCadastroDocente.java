@@ -61,11 +61,7 @@ public class ViewCadastroDocente extends javax.swing.JFrame {
 
         jButton2.setText("Excluir");
 
-        jTextField1.setText("jTextField1");
-
-        jTextField2.setText("jTextField2");
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Letras", "Matemática", "Biologia", "Direito", "Educação", "Administração", "Filosofia", "Veterinária", "Geografia", "Física", "Arquitetura", "Engenharia" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

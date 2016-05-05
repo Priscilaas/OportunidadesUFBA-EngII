@@ -4,7 +4,7 @@ import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 
-//Retorna o endereço com o nome do arquivo para salvar.
+//Retorna o endereï¿½o com o nome do arquivo para salvar.
 abstract class EscolherArquivo{
 	public EscolherArquivo(){
 		
@@ -12,10 +12,10 @@ abstract class EscolherArquivo{
 	
 	public String buscarArquivoAbrir(String TipoArquivo){
 		
-		// Escolhe o caminho padrão que a janela irá abrir (desktop)
+		// Escolhe o caminho padrao que a janela ira abrir (desktop)
 		String diretorioBase = System.getProperty("user.home")+"/Desktop";
 
-		// Cria um caminho apartir do diretório
+		// Cria um caminho apartir do diretï¿½rio
 		File dir = new File(diretorioBase);
 		
 		// Tela de busca do arquivo
@@ -24,16 +24,16 @@ abstract class EscolherArquivo{
 		// titulo da tela de abrir
 		chooser.setDialogTitle("Abrir Arquivo");
 		
-		// informando o diretorio padrão
+		// informando o diretorio padrï¿½o
 		chooser.setCurrentDirectory(dir);
 		
-		// informando ao filtro que só quer selecionar/abrir arquivos (não diretórios)
+		// informando ao filtro que sï¿½ quer selecionar/abrir arquivos (nï¿½o diretï¿½rios)
 		chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 		
 		// impedindo que seja possivel escolher outro tipo de arquivo.
 		chooser.setAcceptAllFileFilterUsed(false);
 		
-		// Filtra pelo tipo de arquivo que foi passado ao método.
+		// Filtra pelo tipo de arquivo que foi passado ao mï¿½todo.
         switch( TipoArquivo )
         {
             case "Aluno": 
@@ -41,7 +41,7 @@ abstract class EscolherArquivo{
             	// Implementa os tipos de arquivos que apareceram para a escolha.
             	FileNameExtensionFilter filtro = new FileNameExtensionFilter("Arquivo Cadastro Alunos", "aca");
             	
-            	// imformar qual é o tipo de arquivo possivel de abrir.
+            	// imformar qual ï¿½ o tipo de arquivo possivel de abrir.
             	chooser.addChoosableFileFilter(filtro);
             	break;
             }
@@ -62,7 +62,7 @@ abstract class EscolherArquivo{
             	// Implementa os tipos de arquivos que apareceram para a escolha.
             	FileNameExtensionFilter filtro = new FileNameExtensionFilter("Arquivo Cadastro Oportunidades", "aco");
             	
-            	// imformar qual é o tipo de arquivo possivel de abrir.
+            	// imformar qual ï¿½ o tipo de arquivo possivel de abrir.
             	chooser.addChoosableFileFilter(filtro);
             	break;
             }
@@ -72,10 +72,10 @@ abstract class EscolherArquivo{
         }
             	
 		String caminhoArquivo = "";
-		// Habilitando o botão de abrir (ShowOpenDialog pra salvar)
+		// Habilitando o botï¿½o de abrir (ShowOpenDialog pra salvar)
 		int retorno = chooser.showOpenDialog(null);
 		
-		// Se selecionou o arquivo, retorna o endereço completo.
+		// Se selecionou o arquivo, retorna o endereï¿½o completo.
 		if(retorno == JFileChooser.APPROVE_OPTION){
 			caminhoArquivo = chooser.getSelectedFile().getAbsolutePath();
 		}
@@ -86,10 +86,10 @@ abstract class EscolherArquivo{
 
 	public String buscarArquivoSalvar(String TipoArquivo){
 		
-		// Escolhe o caminho padrão que a janela irá abrir (desktop)
+		// Escolhe o caminho padrï¿½o que a janela irï¿½ abrir (desktop)
 		String diretorioBase = System.getProperty("user.home")+"/Desktop";
 
-		// Cria um caminho apartir do diretório
+		// Cria um caminho apartir do diretï¿½rio
 		File dir = new File(diretorioBase);
 		
 		// Tela de busca do arquivo
@@ -98,16 +98,16 @@ abstract class EscolherArquivo{
 		// titulo da tela de abrir
 		chooser.setDialogTitle("Salvar Arquivo");
 		
-		// informando o diretorio padrão
+		// informando o diretorio padrï¿½o
 		chooser.setCurrentDirectory(dir);
 		
-		// informando ao filtro que só quer selecionar/abrir arquivos (não diretórios)
+		// informando ao filtro que sï¿½ quer selecionar/abrir arquivos (nï¿½o diretï¿½rios)
 		chooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 		
 		// impedindo que seja possivel escolher outro tipo de arquivo.
 		chooser.setAcceptAllFileFilterUsed(false);
 		
-		// Filtra pelo tipo de arquivo que foi passado ao método.
+		// Filtra pelo tipo de arquivo que foi passado ao mï¿½todo.
         switch( TipoArquivo )
         {
             case "aca": 
@@ -115,7 +115,7 @@ abstract class EscolherArquivo{
             	// Implementa os tipos de arquivos que apareceram para a escolha.
             	FileNameExtensionFilter filtro = new FileNameExtensionFilter("Arquivo Cadastro Alunos", "aca");
             	
-            	// imformar qual é o tipo de arquivo possivel de abrir.
+            	// imformar qual ï¿½ o tipo de arquivo possivel de abrir.
             	chooser.addChoosableFileFilter(filtro);
             	break;
             }
@@ -140,10 +140,10 @@ abstract class EscolherArquivo{
         }
             	
 		String caminhoArquivo = "";
-		// Habilitando o botão de abrir (ShowOpenDialog pra salvar)
+		// Habilitando o botï¿½o de abrir (ShowOpenDialog pra salvar)
 		int retorno = chooser.showSaveDialog(null);
 		
-		// Se selecionou o arquivo, retorna o endereço + nome + extenção do arquivo.
+		// Se selecionou o arquivo, retorna o endereï¿½o + nome + extenï¿½ï¿½o do arquivo.
 		if(retorno == JFileChooser.APPROVE_OPTION){
 			caminhoArquivo = chooser.getSelectedFile().getAbsolutePath();
 			
